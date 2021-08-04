@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js"></script>
   <title>Akan Name Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -45,26 +46,26 @@
         </div>
         <div class="date-form">
 
-            <form name="myForm" onsubmit="return aggregateFunctions()">
+            <form name="myForm" >
 
                 <label class="label" id="birthday">Your Birthday</label><br>
                 <div id="result"></div><br>
                 <label>Day</label>
-                <input type="text" id="mdate" name="mdate" value="">
+                <input type="number" id="mdate" name="mdate" value="">
                 <label>Month</label>
-                <input type="text" id="mmonth" name="mmonth" value="">
+                <input type="number" id="mmonth" name="mmonth" value="">
                 <label>Year</label>
-                <input type="text" id="myear" name="myear" value="">
+                <input type="number" id="myear" name="myear" value="">
                 <div id="date"></div>
 
-                <div id="the-gender" class="label">Your Gender</div>
+                <div id="gender" class="label">Your Gender</div>
 
-                <input type="radio" name="gender" value="male">Male
-                <input type="radio" name="gender" value="female">Female<br>
+                <input type="radio" name="gender" id="male" value="male">Male
+                <input type="radio" name="gender" id="female" value="female">Female<br>
 
 
-                <input type="button" value="SUBMIT" onclick="getData()">
-                <input type="submit" value="FIND ANOTHER" onClick="clearInput()">
+                <input type="submit" value="submit" onclick="getName()">
+                <!-- <input type="reset" value="reset" > -->
 
             </form>
         </div>
@@ -72,6 +73,6 @@
                 <p id="output"></p>
             </div>
 
-    <script src="JavaScript/javascript.js"></script>
+  
 </body>
 </html>
