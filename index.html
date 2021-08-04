@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akan Name Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div id="welcome-message">
+            <h1>AKAN Name</h1>
+
+        </div>
+        <div id="welcome-story">
+            <h3>Explanation</h3>
+            <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
+
+            </p>
+            <p>
+                Here are Ghanian day names.
+            </p>
+            <h3>Male</h3>
+            <ol>
+                <li>Sunday: Kwasi</li>
+                <li>Monday: Kwadwo</li>
+                <li>Tuesday: Kwabena</li>
+                <li>Wednesday: Kwaku</li>
+                <li>Thursday: Yaw</li>
+                <li>Friday: Kofi</li>
+                <li>Saturday: Kwame</li>
+            </ol>
+            <h3>Female</h3>
+            <ol>
+
+                <li>Sunday: Akosua</li>
+                <li>Monday: Adwoa</li>
+                <li>Tuesday: Abenaa</li>
+                <li>Wednesday: Akua</li>
+                <li>Thursday: Yaa</li>
+                <li>Friday: Afua</li>
+                <li>Saturday: Ama</li>
+            </ol>
+        </div>
+        <div class="date-form">
+
+            <form name="myForm" onsubmit="return aggregateFunctions()">
+
+                <label class="label" id="birthday">Your Birthday</label><br>
+                <div id="result"></div><br>
+                <label>Day</label>
+                <input type="text" id="mdate" name="mdate" value="">
+                <label>Month</label>
+                <input type="text" id="mmonth" name="mmonth" value="">
+                <label>Year</label>
+                <input type="text" id="myear" name="myear" value="">
+                <div id="date"></div>
+
+                <div id="the-gender" class="label">Your Gender</div>
+
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female<br>
+
+
+                <input type="button" value="SUBMIT" onclick="getData()">
+                <input type="submit" value="FIND ANOTHER" onClick="clearInput()">
+
+            </form>
+        </div>
+        <div class="output">
+                <p id="output"></p>
+            </div>
+
+    <script src="JavaScript/javascript.js"></script>
+</body>
+</html>
